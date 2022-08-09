@@ -1,0 +1,11 @@
+.button {
+  padding: 30px;
+  background-color: rgb(112, 219, 236);
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px rgba(0 0 0 / 0.2);
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}

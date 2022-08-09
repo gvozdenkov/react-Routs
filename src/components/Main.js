@@ -1,10 +1,9 @@
-import React from 'react'
-import '../components/Main.css'
+import Button from "./Button";
 
 function Main() {
   return (
-    <div className='content page__section'>Main</div>
-  )
+      <Button title="My Story" />
+    </div>
 }
 
 export default Main
