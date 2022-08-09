@@ -1,0 +1,7 @@
+.footer {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#9fd6c3, #669d8a);
+}
