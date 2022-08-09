@@ -7,22 +7,22 @@ function Header() {
       <h2 className="header__title">🤔 Emoji Critic</h2>
       <ul className="nav">
         <li>
-          <a href="" className="nav__item">
+          <a href="/" className="nav__item">
             Home
           </a>
         </li>
         <li>
-          <a href="" className="nav__item">
+          <a href="/reviews" className="nav__item">
             Emoji Review
           </a>
         </li>
         <li>
-          <a href="" className="nav__item">
+          <a href="/about-me" className="nav__item">
             About Me
           </a>
         </li>
         <li>
-          <a href="" className="nav__item">
+          <a href="/about-us" className="nav__item">
             About Us
           </a>
         </li>
