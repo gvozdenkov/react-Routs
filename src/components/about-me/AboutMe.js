@@ -1,10 +1,7 @@
 import React from "react";
-import { Link, Route, useRouteMatch } from "react-router-dom";
+import { Link, NavLink, Route, useRouteMatch } from "react-router-dom";
 import Dashboard from "../Dashboard";
 import "./AboutMe.css";
-import Contact from "./Contact";
-import Hobbies from "./Hobbies";
-import MyStory from "./MyStory";
 
 function AboutMe() {
   const { path, url } = useRouteMatch();
@@ -12,19 +9,32 @@ function AboutMe() {
     <div className="about-me">
       <ul className="links">
         <li>
-          <Link to={`${url}/my-story`} className="button">
+          <NavLink
+            exact
+            to={`${url}/my-story`}
+            className="button"
+            activeClassName="button_active"
+          >
             My Story
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={`${url}/hobbies`} className="button">
+          <NavLink
+            to={`${url}/hobbies`}
+            className="button"
+            activeClassName="button_active"
+          >
             My Hobbies
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={`${url}/contacts`} className="button">
+          <NavLink
+            to={`${url}/contacts`}
+            className="button"
+            activeClassName="button_active"
+          >
             My Contacts
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Route path={`${path}/my-story`}>
