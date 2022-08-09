@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/Dashboard.css";
 
-function Dashboard({ title, text }) {
+function Dashboard({ title, text, children }) {
   return (
     <div className="dashboard">
       <h1
@@ -12,6 +12,7 @@ function Dashboard({ title, text }) {
         {title}
       </h1>
       <p className="dashboard__text">{text}</p>
+      {children}
     </div>
   );
 }

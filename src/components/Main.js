@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "../components/Main.css";
 import AboutMe from "./AboutMe";
 import AboutUs from "./AboutUs";
@@ -15,7 +15,9 @@ function Main() {
           <Dashboard
             title="Emoji Critic — All about Emojis"
             text="The #1 Destination for Emoji Reviews on the World Wide Web since 2020!"
-          />
+          >
+            <Link to="/reviews">See ALL Reviews</Link>
+          </Dashboard>
         </Route>
         <Route path="/reviews">
           <Reviews />
