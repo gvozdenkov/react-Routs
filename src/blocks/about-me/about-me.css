@@ -1,0 +1,7 @@
+.about-me{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 40px;
+    min-height: calc(100vh - 300px);
+}
