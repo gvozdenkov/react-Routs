@@ -1,0 +1,12 @@
+.nav__item {
+  color: black;
+  font-size: 18px;
+  padding: 7px 7px;
+  border: 1px solid transparent;
+  transition: 0.15s ease-out;
+}
+
+.nav__item:hover {
+  border: 1px solid black;
+  transition: 0.2s ease-in;
+}
