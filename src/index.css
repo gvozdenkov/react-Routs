@@ -1,3 +1,20 @@
 @import url(./vendor/normalize.css);
 @import url(./common.css);
 @import url(./vendor/font.css);
+
+#root {
+  background-color: rgb(159, 214, 195);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.page__section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
