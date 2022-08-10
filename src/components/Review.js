@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import "../components/Review.css";
-import SvgButton from "./nav/SvgButton";
+import SvgButton from "./nav2/SvgButton";
 import arrowButtonImg from "../images/arrow-right-thin.svg";
 
 function Review({ reviews }) {
