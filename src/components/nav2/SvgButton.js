@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./SvgButton.css";
+import defaultButtonImg from "../../images/arrow-right-thin.svg";
 
 function SvgButton({ img, size, rotation }) {
   const styles = {
@@ -18,8 +19,14 @@ function SvgButton({ img, size, rotation }) {
 SvgButton.propTypes = {
   img: PropTypes.string,
   // img_hover: PropTypes.string,
-  rotation: PropTypes.string,
+  rotation: PropTypes.number,
   size: PropTypes.oneOf(["small", "normal", "large"]),
+};
+
+SvgButton.defaultProps = {
+  img: defaultButtonImg,
+  size: "normal",
+  rotation: 0,
 };
 
 SvgButton.sizes = {
