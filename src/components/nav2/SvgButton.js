@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./SvgButton.css";
 import defaultButtonImg from "../../images/arrow-right-thin.svg";
 
-function SvgButton({ img, size, rotation }) {
+function SvgButton({ img, size, rotation, onClick, disable }) {
   const styles = {
     background: `url(${img})`,
     backgroundPosition: "center",
@@ -13,11 +13,18 @@ function SvgButton({ img, size, rotation }) {
     height: SvgButton.sizes[size],
     transform: `rotate(${rotation}deg)`,
   };
-  return <button className="svg-button" style={styles}></button>;
+  return (
+    <button
+      className={`svg-button ${disable ? "svg-button_disabled" : ""}`}
+      style={styles}
+      onClick={onClick}
+    ></button>
+  );
 }
 
 SvgButton.propTypes = {
   img: PropTypes.string,
+  size: PropTypes.string,
   // img_hover: PropTypes.string,
   rotation: PropTypes.number,
   size: PropTypes.oneOf(["small", "normal", "large"]),
@@ -27,6 +34,8 @@ SvgButton.defaultProps = {
   img: defaultButtonImg,
   size: "normal",
   rotation: 0,
+  onClick: "",
+  disabled: "",
 };
 
 SvgButton.sizes = {

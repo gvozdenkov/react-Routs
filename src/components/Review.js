@@ -14,7 +14,13 @@ function Review({ reviews }) {
         <div className="review__item">
           <h1 className="review__title">{reviews[id].title}</h1>
           <p className="review__text">{reviews[id].text}</p>
-          <SvgButton img={arrowButtonImg} size="large" rotation={180} />
+          <SvgButton
+            img={arrowButtonImg}
+            size="large"
+            rotation={180}
+            onClick={() => history.goBack()}
+            disable={false}
+          />
         </div>
       )}
     </div>
