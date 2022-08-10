@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "../components/Review.css";
+import ArrowButton from "./nav/ArrowButton";
 
 function Review({ reviews }) {
   let { id } = useParams();
@@ -11,6 +12,7 @@ function Review({ reviews }) {
         <div className="review__item">
           <h1 className="review__title">{reviews[id].title}</h1>
           <p className="review__text">{reviews[id].text}</p>
+          <ArrowButton degree={-180} />
         </div>
       )}
     </div>
