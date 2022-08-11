@@ -4,9 +4,11 @@ import { ThemeContext } from "../components/contexts/ThemeContext";
 
 function ThemeSelect({ onChange }) {
   const theme = useContext(ThemeContext);
-
+  function handleThemeChange(e) {
+    onChange(e.target.value);
+  }
   return (
-    <select onChange={onChange} className="theme-select">
+    <select onChange={handleThemeChange} className="theme-select">
       <option value="light" className="theme-select__item">
         Ligth {theme.color === "light" && "✅"}
       </option>
