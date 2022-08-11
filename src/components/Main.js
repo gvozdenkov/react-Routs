@@ -7,6 +7,7 @@ import Button from "./Button";
 import Dashboard from "./Dashboard";
 import Review from "./Review";
 import Reviews from "./Reviews";
+import PageNotFound from "./PageNotFound";
 
 function Main() {
   let [reviews, setReviews] = React.useState();
@@ -46,6 +47,9 @@ function Main() {
         </Route>
         <Route path="/about-us">
           <AboutUs />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
         </Route>
       </Switch>
     </div>

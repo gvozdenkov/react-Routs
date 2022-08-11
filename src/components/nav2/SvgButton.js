@@ -24,10 +24,9 @@ function SvgButton({ img, size, rotation, onClick, disable }) {
 
 SvgButton.propTypes = {
   img: PropTypes.string,
-  size: PropTypes.string,
-  // img_hover: PropTypes.string,
   rotation: PropTypes.number,
   size: PropTypes.oneOf(["small", "normal", "large"]),
+  disable: PropTypes.bool,
 };
 
 SvgButton.defaultProps = {
