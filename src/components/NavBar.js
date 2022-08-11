@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "../components/NavBar.css";
+import { TranslationContext } from "../components/contexts/TranslationContext";
 
 function NavBar() {
+  const lang = useContext(TranslationContext);
+  console.log(lang.nav.review);
   return (
     <nav>
       <ul className="nav">
@@ -13,7 +16,7 @@ function NavBar() {
             className="nav__item"
             activeClassName="nav__item_active"
           >
-            Home
+            {lang.nav.home}
           </NavLink>
         </li>
         <li>
@@ -22,7 +25,7 @@ function NavBar() {
             className="nav__item"
             activeClassName="nav__item_active"
           >
-            Emoji Review
+            {lang.nav.review}
           </NavLink>
         </li>
         <li>
@@ -31,7 +34,7 @@ function NavBar() {
             className="nav__item"
             activeClassName="nav__item_active"
           >
-            About me
+            {lang.nav.aboutMe}
           </NavLink>
         </li>
         <li>
@@ -40,7 +43,7 @@ function NavBar() {
             className="nav__item"
             activeClassName="nav__item_active"
           >
-            About us
+            {lang.nav.aboutUs}
           </NavLink>
         </li>
       </ul>
