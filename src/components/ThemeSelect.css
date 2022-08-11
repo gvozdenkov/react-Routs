@@ -1,0 +1,9 @@
+.theme-select {
+  background: transparent;
+  padding: 6px;
+  max-width: 100px;
+}
+
+.theme-select__item:checked {
+  color: red;
+}

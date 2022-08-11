@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Header.css";
 import NavBar from "./NavBar";
+import ThemeSelect from "./ThemeSelect";
 
 function Header() {
   return (
